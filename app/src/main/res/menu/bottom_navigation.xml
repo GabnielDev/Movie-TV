@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title=""/>
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_search"
+        android:title=""/>
+
+    <item
+        android:id="@+id/nav_tv"
+        android:icon="@drawable/ic_tv"
+        android:title=""/>
+
+    <item
+        android:id="@+id/nav_koleksiku"
+        android:icon="@drawable/ic_daftarku"
+        android:title=""/>
+
+    <item
+        android:id="@+id/nav_lainnya"
+        android:icon="@drawable/ic_lainnya"
+        android:title=""/>
+
+
+</menu>

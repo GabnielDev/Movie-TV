@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.TVFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="6dp"
+        app:cardUseCompatPadding="true">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imageslidertv"
+            android:layout_width="match_parent"
+            android:layout_height="196dp"
+            app:iss_auto_cycle="true"
+            app:iss_delay="0"
+            app:iss_period="2000" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAiringToday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TV Nasional" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/nettv"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/ic_nettv"/>
+
+
+                <Button
+                    android:id="@+id/kompastv"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/ic_kompastv" />
+
+                <Button
+                    android:id="@+id/inewstv"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/ic_inews"/>
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-47dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_toStartOf="@+id/txtSignup"
+            android:text="Login"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/txtSignup"
+            app:layout_constraintHorizontal_bias="0.141"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/txtSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="36dp"
+            android:text="Sign up"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="90dp"
+            android:layout_height="101dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/ic_account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            tools:layout_editor_absoluteY="304dp">
+
+            <EditText
+                android:id="@+id/edtEmailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawablePadding="10dp"
+                android:hint="Email address"
+                android:inputType="textEmailAddress"
+                android:lines="1" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
+            tools:layout_editor_absoluteX="0dp">
+
+            <EditText
+                android:id="@+id/edtPasswordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/bg_corner_abu"
+            android:padding="10dp"
+            android:layout_marginBottom="50dp"
+            android:text="Login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout7"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout7"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
+            app:layout_constraintVertical_bias="0.353" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
